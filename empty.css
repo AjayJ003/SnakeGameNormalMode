@@ -1,0 +1,32 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    min-height: 100vh;
+    background-color: #293447;
+    justify-content: center;
+    align-items: content;
+}
+
+.outerwindow{
+    display: grid;
+    height: 100%;
+    align-content: center;
+}
+
+a{
+    position: relative;
+    padding: 60px 60px;
+    background-color: #E3F2FD;
+    color: black;
+    font-family: 'Sofia', Courier, monospace;
+    font-size: 45px;
+    transition: 1s;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+a:hover
+{
+    background-color: #a17703;
+    letter-spacing: 6px;
+}
+

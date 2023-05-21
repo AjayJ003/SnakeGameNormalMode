@@ -1,0 +1,195 @@
+body{
+    background-color: #bce7f5;
+    display: grid;
+    justify-content: center;
+    grid-gap: 100px;
+  }
+
+.Heading{
+    display: grid;
+    justify-content: center;
+    font-family: 'Sofia', Courier, monospace;
+    font-size: 35px;
+}
+
+.headinglb{
+  display: grid;
+  justify-content: center;
+  font-family: 'Sofia', Courier, monospace;
+  font-size: 35px;
+}
+
+.outerWindow{
+  width: 65vmin;
+  height: 70vmin;
+  
+}
+
+.gameScore{
+    display: flex;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 20px;
+    background-color: #212837;
+    border-top-left-radius:5px ;
+    border-top-right-radius:5px ;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-family: 'Sofia', Courier, monospace;
+    color: white;
+    box-shadow: 0 20px 40px black;
+}
+
+.playBoard{
+    display: grid;
+    height: 84%;
+    width: 100%;
+    background: #B8C6DC;
+    box-shadow: 0 20px 40px black;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.food1{
+  background: red;
+  border-radius: 3px;
+}
+
+.food2{
+  background-color: blue;
+  border-radius: 3px;
+}
+
+.food3{
+  background-color: yellow;
+  border-radius: 3px;
+}
+
+.food4{
+  background-color:white;
+  border-radius: 3px;
+}
+
+.snake{ 
+    background-color:darkgreen;
+    border-radius: 3px;
+}
+
+button {
+  display: grid;
+  background-color: #212837; 
+  font-family: 'Sofia', Courier, monospace;
+  color: white;
+  height: 10%;
+  width: 100%;
+  padding: 15px 29px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 20px 40px black;
+}
+
+.exit{
+    display: grid;
+    background-color: #212837;
+    height: 7%;
+    width: 100%;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-family: 'Sofia', Courier, monospace;
+    font-size: 25px;
+    box-shadow: 0 20px 40px black;
+}
+
+.seqc{
+  display: flex;
+  background-color: white;
+  background:  #B8C6DC;
+  border-top-style:  solid;
+  border-bottom-style:  solid;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-family: 'Sofia', Courier, monospace;
+  border-top-right-radius:5px ;
+  border-top-left-radius:5px ;
+  border-bottom-left-radius:5px ;
+  border-bottom-right-radius:5px ;
+  font-size: 15px;
+  box-shadow: 0 20px 40px black;
+}
+
+a{
+  color: white;
+  font-family: 'Sofia', Courier, monospace;
+}
+
+.buttonControls {
+    display: none;
+    justify-content: space-between;
+  }
+
+.buttonControls i {
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: #05e9ed;
+    color: black;
+    width: calc(100% / 4);
+    cursor: pointer;
+    border-right: 1px solid #171B26;
+}
+.lbc{
+  font-weight: 500;
+  font-size: 1.2rem;   
+  background-color: #212837;
+  border-top-left-radius:5px ;
+  border-top-right-radius:5px ;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Sofia', Courier, monospace;
+  color: white;
+  box-shadow: 0 20px 40px black;
+}
+
+@media screen and (max-width: 400px) {
+    .outerWindow {
+      width: 65vmin;
+      height: 65vmin;
+    }
+    .gameScore {
+      font-size: 1rem;
+      padding: 15px 27px;
+    }
+    .Heading{
+      display: flex;
+      justify-content: center;
+      font-family: 'Sofia', Courier, monospace;
+      font-size: 25px;
+    }
+    .buttonControls{
+      display: flex;
+    }
+    .buttonControls i {
+      padding: 10px 0;
+      font-size: 1rem;
+    }
+    .exit{
+      font-size: 0.7rem;
+      height: 8%;    
+    } 
+    button {
+      display: grid;
+      background-color: #212837; 
+      font-family: 'Sofia', Courier, monospace;
+      color: white;
+      height: 8%;
+      padding: 15px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 0.7rem;
+      border-radius: 5px;
+    }
+}
